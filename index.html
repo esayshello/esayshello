@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <meta charset = "UTF-8">
+   <meta http-equic="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personal Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <script src = "https://kit.fontawesome.com/c4254e24a8.js" crossorigin = "anonymous" ></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+         <ul id = "sidemenu">
+            <br><br><li><a href="#header">Home</a><li>
+            <li><a href="#about">About Me</a><li>
+            <li><a href="#object">Objected Oriented Programming</a><li>
+            <li><a href="#arrays">Arrays</a><li>
+            <li><a href="#arrayLists">ArrayLists</a><li>
+            <li><a href="#searching">Searching & Sorting</a><li>
+            <li><a href="#recursion">Recursion</a><li>
+            <li><a href="#final">Final Project ISP</a><li>
+            <li><a href="#bibliography">Bibliography</a><li>
+         </ul>
+      </nav>
+      <div class="header-text">
+         <p>ICS4UO Student</p>
+         <h1>Hi, I'm <span>Eathan</span><br>Rajendram from WLMAC</h1>
+      </div>
+   </div>
+</div>
+<!----------about--------->
+<div id="about">
+   <div class="container">
+      <div class="row">
+         <div class="about-col-1">
+            <img src="images/user.jpg">
+         </div>
+         <div class="about-col-2">
+            <h1 class="sub-title"> <br>About Me</h1>
+            <p> <br> I am a current highschool student! I am also a passionate, self-motivated individual who is well organized and able to easily adapt to new working environments. 
+                With this, I am a quick learner who is extremely focused, and is able to work independently, or as a team member. Finally, I am a team player who provides many solutions and collaborates with others. 
+                A fun fact about me is that I had to learn how to program an Arduino by myself because it was requried as part of one of computer enginneering projects. Although it was quite challenging understanding what the syntax and functions meant, it was still a fun experience. 
+                I can also understand and kind of speak Tamil. Finally, I love collecting coins. I think that there are so many coins in the world that have unique designs and I think that those coins are extremely fascinating.
+            </p>
+            
+            <div class="tab-titles">
+               <p class="tab-links active-link" onclick="opentab('interests')">Interests</p>
+               <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div> 
+            <div class="tab-contents active-tab" id = "interests">
+               <ul>
+                  <li><span>Programming</span><br>Love creating new programs and seeing the final result (Picture 1: A screen from my final project in ICS4U0) </li>
+                  <li><span>Sports</span><br>Love swimming (Picture 2: One pool near me that I do lane swim in for practice)</li>
+                  <li><span>Reading</span><br>Love to read all sorts of books from various genres -> fantasy to mystery (Picture 3: Cover of one of my favourite books of one of my all-time favourite series)</li>
+                  <br><br><img src = "images/IntroISP.png">
+                  <br><br><br><br><br><img src = "images/Pool.png">
+                  <br><br><br><br><br><img src = "images/HarryPotter.png">
+               </ul>
+            </div>
+            <div class="tab-contents" id = "experience">
+               <ul>
+                  <li><span>2022-Current</span><br>Member of William Lyon Mackenzie's Science Club (MSC) -> Out of all the grade 10s at Mackenzie, I was the second person who won the most points from MSC events (Picture 1: Logo of MSC)</li>
+                  <li><span>2022-Current</span><br>Member of William Lyon Mackenzie's Biology Club -> One time, I was able to make DNA from mashing strawberries</li>
+                  <li><span>2021-Current</span><br>Member of HOSA Canada -> Participated in 2022-2023 in First Aid/CPR, and placed 5th in their annual competition, SLC (Picture 2: Logo of HOSA)</li>
+                  <br><br><img src = "images/MSC.png">
+                  <br><br><br><br><br><img src = "images/HOSA.png">
+               </ul>
+            </div>
+         </div>
+      <br><br>
+      </div>
+      <br><br><h3>Where do you want to go?</h3>
+      <br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white">  Arrays</a><br><a href = "#arrayLists"style = "color: white">  ArrayLists</a><br><a href = "#searching"style = "color: white">  Searching & Sorting</a><br><a href = "#recursion"style = "color: white">Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+   </div>
+   <!-------------lessons-------------------->
+   <div id="object">
+      <div class="container">
+         <h1 class = "sub-title">Lessons </h1>
+         <div class = "object-list">
+            <div>
+               <i class></i>
+               <img src="images/OOPIntroImage.jpeg">
+               <h2> <br>Objected Oriented Programming (OOP)</h2>
+               <h3> <br>Overview</h3>
+               <p>
+                  Java is a programming language that uses Object Oriented Programming. 
+                  This means that it allows the programmer to create objects that have identities, states and behaviours. 
+                  In order to create an object, you have to first create a class. A famous analogy for this is making a cookie. 
+                  If we think of dough as memory, the cookie cutter would be the class and the cookie would be the object.
+               </p>
+               <h3><br>Static vs Non-static</h3>
+               <p>
+                  Behaviours of objects are known as non-static methods. 
+                  This means that they have to be referenced to an object in order to be executed by the compiler. 
+                  However, something that is static (e.g. a static method) means that it does not need to be referenced to an object. 
+               </p>
+               <h3><br>Constructors</h3>
+               <p>
+                  A thing to consider is that objects can have different characteristics, but still be the same type of object. 
+                  For example, referring to the cookie analogy, cookies can come in different sizes and decorations. This is due to the use of constructors.
+                  By using constructors with varying parameters, we can declare and instantiate the same type of objects with different properties. 
+                  It is important to note that the keyword new must be used as that is the keyword that stores the object in memory. 
+               </p>
+               <h3><br>Dot Notation</h3>
+               <p>
+                  While some objects can be changed using their own methods, others can't because they are immutable objects; they can't be changed once constructed. 
+                  One famous example is String objects. As a result, if we ever want access to these types of objects, we have to use dot notation. 
+                  This gives us access to these objects' variables and methods. 
+               </p>
+               <h3><br>UML & Access Modifiers</h3>
+               <p>
+                  A UML diagram is something programmers use to start planning on how to construct a class. 
+                  It will contain the name of the class, its attributes and behaviours, and sample characteristics of objects if they were created from the class. 
+                  It is also important to note that we include access modifiers because they remind us to include them when we declare them in our program. 
+                  Access modifiers let attributes and behaviours be either public or private. 
+                  By making something public, it lets other classes outside of the current class have access to it. 
+                  This could cause a problem when running a program with multiple classes (e.g.  a mistake in a program could change a public attribute that was not intended to be changed). 
+                  However, by making something private, it encapsulates the attribute or behaviour, preventing access to the attribute or behaviour by other outside classes. 
+                  The image below shows an example of an UML for an assignment where we were given the actual code and were given the task of creating 5 objects from that code.
+                  I have converted the variables and methods from the program to a UML design to show how the code would look like if it was in the planning stage and the code was not created.
+               </p>
+               <br><br><img src="images/OOPUML.jpeg">
+               <h3><br>Inheritance</h3>
+               <p>
+                  Inheritance allows subclasses to inherit the behaviours of its parent class. This is important because it allows programmers to reuse code, being more efficient. 
+                  One thing to note is that if we ever want a subclass to have access to a variable of its parent class (e.g. to modify it), we can't just do it like we normally do. For example, assume we have declared and initialised example of type int in a parent class. 
+                  In a subclass, we can't just do, example = 10;. This is because we make attributes in a parent class private to ensure unintentional modifications do not occur. However, this prevents inheritance of the attributes from occurring. 
+                  As a result, we make public get and set methods. Get methods gives us access to an attribute, while set methods allows us to modify it. By calling these methods in a subclass, we can have access to parent class attributes while still keeping them private. 
+                  Another thing to remember about inheritance is that in order to inherit from a parent class, the subclass must use the super keyword in their constructor(s). This keyword gives access to the constructor parameters in the parent class. 
+                  The super statement must also be the first line in the constructor. <br><br>There are also two types of inheritance. One type is when the subclass has a is-a relationship to its parent class. An example of this is a grocery store, subclass, inheriting from the store, parent class. 
+                  A grocery store is a store. The other type of inheritance is when the subclass has a has-a relationship to its parent class. An example of this is a shelf, subclass, inheriting from the grocery store, parent class. A grocery store has a shelf. 
+                  </p>
+                  <h3><br>Overriding</h3>
+                  <p>
+                  Overriding is something that occurs when a subclass has the same method name and parameters as its parent class. When this happens, the program will call the method from the subclass, not the parent class. 
+                  The only exception to this is if you call the method using the super keyword, in which the method will be called from the parent class. 
+                  </p>
+                  <h3><br>Polymorphism</h3>
+                  <p>Polymorphism is when a method is executed based on the type of the object that was created. For example, let's say you have created three sub classes from one parent class. Now, you make three objects, each object being instantiated as a subclass type and declaring each object as the parent class. 
+                  Also, they all had the same method, but different method bodies. If you were to call the method for each object, they would call the method related to that specific subclass because you instantiated the object as that specific type of subclass. 
+                  </p>
+                  <h3><br>Interface</h3>
+                  <p>An interface is a parent class that contains only abstract methods. Abstract methods mean that they contain no method body, just their signatures. The usefulness of an interface is that it provides the framework for the subclasses. If each subclass has their own way of performing the same function, they can call that method signature and update the method body.        
+                  <br><br>The images below shows a program that I made with two other people that demonstrates inheritance. The first image represents the parent class and the second image represents the subclass inheriting from the parent class. 
+               </p>
+               <br><br><img src="images/OOPInheritanceParent.png">
+               <br><img src="images/OOPInheritanceSub.png">
+               <br><br><br><p>
+               <h3>Where do you want to go?</h3>
+               </p><br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="arrays">
+   <div class="container">
+      <div class = "arrays-list">
+         <div>
+            <i class></i>
+            <img src="images/ArraysIntro2.jpeg">
+               <h2><br> Arrays</h2>
+               <h3><br>Overview</h3>
+               <p> Arrays are objects that allow elements to be stored and referenced under one name, unlike being individually named like variables. 
+                   However, each element can still be referenced by accessing the array's index. It is important to remember that the size of an array can't be changed once initialised.       
+                   Furthermore, it is important to remember that the index of an array starts at 0, not 1. For example, in an array with elements [0,5,7,2], index 2 will store an element containing the value 7. 
+               </p>
+               <h3><br>Accessing Arrays</h3>
+               <p>
+                  The contents of an array can either be predetermined during initialization or determined during the execution of the program. 
+                  <br><br>The image containing line 4 shows the contents of an array being predetermined. The image containing line 8 shows the contents of an array being determined during the execution of the program. 
+               </p>
+               <br><br><img src="images/OOPArraysPredetermined.png">
+               <br><img src="images/OOPArraysNotDetermined.png">
+               <h3><br>Arrays in Methods</h3>
+               <p>
+                  When arrays are called in methods as parameters, we use the syntax dataType[] name. It is important to remember that as arrays are passed to methods as references, elements in the arrays are not copied. 
+                  Returning arrays are also possible, however, like normal return statements, the return value must agree with the return type as indicated by the method signature. 
+                  The compiler can't return a String array if it was expecting to return an integer array. 
+               </p>
+               <h3><br>One Dimensional Array vs Two Dimensional Array</h3>
+               <p>
+                  One dimensional arrays are arrays that just contain rows of elements. For example, int[] arr = {1,2,3,4,5};, is a one dimensional array. Two dimensional arrays are simply a group of one dimensional arrays. 
+                  As its name suggests, it contains rows and columns. For example, int[][] arrTwo = {{1,2,3,4,5},{1,2,3,4,5}};, is a two dimensional array that contains 2 rows and 5 columns. 
+                  It is important to note that for two dimensional arrays, each row is separated by a comma. Furthermore, there are two types of two dimensional arrays. One is a ragged array. 
+                  A ragged array is when the number of elements in each row is not constant. For example, int[][] arrThree = {{1,2},{1,2,3}};. The other type of two dimensional array is a rectangular array. 
+                  A rectangular array is when the number of elements in each row is constant. For example, int[][] arrFour = {{1,2,3},{1,2,3}};. To traverse a two dimensional array, we use a nested for loop. 
+                  
+                  <br><br>The image below shows a program that demonstrates how multiple one dimensional arrays can be used to rate items through various criterias. The way this was achieved was by using an array to store each item's characteristics and based on those characteristics, it would determine which item was the best.
+                  It also demonstrates how you can manipulate arrays to get different results. 
+               </p>
+               <br><br><img src="images/Arrays1.png">
+               <br><img src="images/Arrays1-2.png">
+               <h3><br>For-each Loop</h3>
+               <p>
+                  A for-each loop is useful for traversing an array. It goes through each element in the array, and executes the loop body. 
+                  Benefits of the for-each loop is that it makes code more readable and is more efficient to write when comparing it to the structure of a for loop. However, it is limited in its functions compared to the for loop. 
+                  Examples include that it is only able to traverse the array starting from index 0; it is unable to traverse in reverse order, and it traverses every single element in the array; you can only increment by 1. 
+               </p>
+               <br><br><p>
+               <h3>Where do you want to go?</h3>
+               </p><br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="arrayLists">
+   <div class="container">
+      <div class = "arrayLists-list">  
+            <div>
+            <i class></i>
+            <img src="images/ArrayListIntro2.jpeg">
+            <h2><br> ArrayLists</h2>
+            <h3><br>Overview</h3>
+            <p> ArrayLists can only hold objects, not primitive data elements. When declaring and initialising an arrayList, if the capacity is not defined, Java will set a default capacity of 10. 
+               It is important to note that unlike arrays where the size cannot change once initialised, an arrayList, once out of space, will double its capacity. 
+            </p>
+            <h3><br>ArrayList Methods</h3>
+            <p>
+               There are various built in methods that one can used to manipulate arrayLists. These including adding values, at the end of the array or at a specific index, setting a value at an index to a new one, and removing an element from the arrayList. 
+               It is important to note that while arrayLists can double its capacity as aforementioned, an IndexOutOfBoundsException can still occur. For example, when you add an element at an index that is greater than the size of the arrayList. 
+               Another thing to note is that we determine an arrayList's size using size() and not length. <br><br> The image below shows a program I made with one other classmate that simulates a card game. 
+               There was a specified scoring system and based on the player's hand (there were four players at all times), the winner would be decided and displayed. This program used arrayLists to store the beginning full deck and the decks of each player. 
+               It can also be seen in the second image below that arrayLists were useful because there was a built in randomising method that was really useful in this problem. 
+            </p>
+            <br><br><img src="images/ArrayList1.png">
+            <br><img src="images/ArrayList2.png">
+            <br><br><br><p>
+            <h3>Where do you want to go?</h3>
+            </p><br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<div id="searching">
+   <div class="container">
+      <div class = "searching-list">  
+         <div>
+            <i class></i>
+            <img src="images/SearchingIntro.jpeg">
+            <h2><br> Searching & Sorting</h2>
+            <h3><br>Overview</h3>
+            <p> Searching is when we traverse an array or arrayList to return a desired result. Sorting is a broad term that means to rearrange elements in either ascending or descending order. This lesson will focus on bubble sort, insertion sort and selection sort. 
+            </p>
+            <h3><br>Sequential Search</h3>
+            <p>
+               One type of searching is sequential search. This is when we compare the value we want to find, to each element in the array or arrayList. The average number of comparisons when implementing sequential search to find a value is n/2, where n is the length of the array or size of the arrayList. 
+               The worst case is n, in which the value is at the opposite ends of the array or arrayList from where you start searching.  <br><br> The image below shows a sample program demonstrating sequential search and how it looks like visually. 
+               The purpose is to search through an array containing the number of chocolate chips on a cookie and based on the number of chocolate chips you want to find, it will return the index of the cookie with that many chocolate chips. 
+            </p>
+            <br><br><img src="images/Sequential1.jpeg">
+            <br><img src="images/Sequential2.jpeg">
+            <h3><br>Binary Search</h3>
+            <p>
+               For this search to work, the elements must already by arranged in ascending or descending order. When implementing this search, it is compared to the element in the middle index of the array or arrayList. 
+               If it is greater, then it will only check all indexes greater than than the middle index. Otherwise, it will check all indexes less than the middle index. 
+               This will happen as many times as it needs until it has found the target value or it is unable to compare with the middle index (meaning it has “checked” all elements in the array or arrayList). 
+               The image below shows a sample program demonstrating binary search and how it looks like visually. 
+            </p>
+            <br><br><img src="images/Binary1.jpeg">
+            <br><img src="images/Binary2.jpeg">
+            <h3><br>Bubble Sort</h3>
+            <p>
+               Bubble sort is one of the easiest sorting algorithms to learn. To explain it, assume we are trying to sort elements in ascending order. Essentially,  you loop through each element (i) in the array or arrayList. 
+               Then, you  compare the ith element to the i+1th element and see which is greater. If the ith element is greater, you would swap them and increase a swap counter that is originally initialised to 0. 
+               After you have checked every single element, the last element in the array or arrayList has been sorted. As a result, you will call the loop again, but you will loop one less time because one element is already sorted; there is no need to check it. 
+               Eventually, if there is a case where your swap counter is 0; there was no swap after checking every element needing to be checked, then your array or arrayList is sorted.<br><br>The image below shows a visual representation of this. 
+            </p>
+            <br><br><img src="images/Bubble.jpeg">
+            <h3><br>Selection Sort</h3>
+            <p>
+               Selection sort is a sorting algorithm that is relatively easy to comprehend. To explain it, assume we are trying to sort elements in ascending order. Essentially,  you loop through each element in the array or arrayList. 
+               Then, you find the largest element in the array or arrayList. After, swap that element with the element at the end of the array or arrayList. Call the loop again, but loop one less time as your last element is already sorted (the length of the array or size of the arrayList that is unsorted is one less). 
+               Once your length or size is equal to 1; there are no two elements that need to be checked, your array or arrayList has been sorted. <br><br>The image below shows a part of a program I wrote that uses this sorting algorithm to sort names in alphabetical order based on first name. 
+            </p>
+            <br><br><img src="images/Selection.png">
+            <h3><br>Insertion Sort</h3>
+            <p>
+               Insertion sort is a sorting algorithm that revolves around the idea of finding an element that doesn't belong where it is and as a result, shifting other elements to create space for that element to go where it is supposed to be. 
+               After we have inserted that element into that space that was created, we start again checking from n + 1, where n is the index of the element that did not belong where it originally was. The image below shows a visual representation of this. 
+            </p>
+            <br><br><img src="images/Insertion.jpeg">
+            <br><br><br><p>
+            <h3>Where do you want to go?</h3>
+            </p><br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<div id="recursion">
+   <div class="container">
+      <div class = "recursion-list">  
+         <div>
+            <i class></i>
+            <img src="images/recursionIntro.jpeg">
+            <h2><br> Recursion</h2>
+            <h3><br>Overview</h3>
+            <p> Recursion is when a method invokes itself. The purpose of recursion is to break down complex situations into simpler ones until a base case has been reached. It is important to note that anything involving recursion must have at least one base case in which no recursion is called. 
+               This is because if no base case is called, the method will keep on calling itself, and will result in infinite recursion. <br><br>The image below shows how recursion works by showing a method that I created that utilises it to calculate the sum of all integers less than or equal to a given number. 
+            </p>
+            <br><br><img src="images/Recursion.png">
+            <br><br><br><p>
+            <h3>Where do you want to go?</h3>
+            </p><br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+         </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="final">
+      <div class="container">
+         <div class = "final-list">  
+            <div>
+               <i class></i>
+               <img src="images/IntroISP.png">
+               <h2><br> Final ISP Project</h2>
+               <h3><br>Overview</h3>
+               <p> To summarize all of our learning into a project that can be displayed to others, my partner, Ma'ayan, and I made an educational program targeted to kids of the age range 5-8 years. The purpose of it was to inform them about various tips on how to survive hot conditions.</p>
+               <h3><br>Levels</h3>
+               <p>In total, we made three levels. The first level was a learning level which introduced the information to the user. It started off by educating them on how they can survive hot conditions. The image below shows an image of the learning screen. 
+                  <br><br><br><img src = "images/Programming.png">
+                  <br><br><br>After, the second level let the user consolidate their knowledge by trying to escape a maze while picking up objects that they have learned in the learning level. The image below shows an image of the maze level. 
+                  <br><br><br><img src = "images/Maze.png">
+                  <br><br><br>Finally, the third level let the user test their knowledge by being able to answer questions related to what they have learned. These questions were intended to ensure that the user comprehended the information that they have learned and are able to apply it when making various decisions. The image below shows an image of the action level.</p>
+                  <br><br><br><img src = "images/Action.png">
+               <br><br><br>
+               <h3>Where do you want to go?</h3>
+               <br><a href = "#header" style = "color: white"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+            </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="bibliography">
+      <div class="container">
+         <h1> Bibliography</h1>
+         <div class = "bibliography-list">  
+            <div>
+            <i class></i>
+            <h3><br>All lessons were referenced from lessons on the ICS4UO Google Classroom</h3>
+            <p>
+               <br>
+               <br> Lesson 1: Objects and classes
+               <br> Lesson 1: OOP and Inheritance
+               <br> Lesson 1: OOP2 Recap
+               <br> Lesson 1: Inheritance, Interface, Polymorphism
+               <br> Lesson 2: Arrays Lesson
+               <br> Lesson 3: Array Util List
+               <br> Lesson 4: Sorting Searching Lesson
+               <br> Lesson 5: Lesson Recursion
+            </p>
+            <br><br><br>
+            <h3>Where do you want to go?</h3>
+            <br><a href = "#header" style = "color: #fff"> Home</a><br><a href = "#about"style = "color: white"> About Me</a><br><a href = "#object"style = "color: white"> Objected Oriented Programming</a><br><a href = "#arrays"style = "color: white"> Arrays</a><br><a href = "#arrayLists"style = "color: white"> ArrayLists</a><br><a href = "#searching"style = "color: white"> Searching & Sorting</a><br><a href = "#recursion"style = "color: white"> Recursion</a><br><a href = "#final"style = "color: white"> Final Project ISP</a><br><a href = "#bibliography"style = "color: white"> Bibliography</a>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<script>
+   var tablinks = document.getElementsByClassName("tab-links"); 
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+      for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+<script>
+   var sidemeu = document.getElementById("sidemenu");
+   function openmenu(){
+      sidemeu.style.right = "0";
+   }
+   function closemenu(){
+      sidemeu.style.right = "-200px";
+   }
+</script>
+</body>
+</html>
